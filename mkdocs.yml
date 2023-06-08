@@ -7,6 +7,9 @@ nav:
     - Pages perso:
         - Vincent D: vincentd.md
         - Mustapha : mustapha.md
+        - Sandy : sandy.md
+        - Laurent: laurent.md
+        - Marie: Marie_Gombert.md
 theme:
     name: readthedocs
 extra_css:
