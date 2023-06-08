@@ -6,8 +6,9 @@ nav:
     - Git ENSG: index.md
     - Pages perso:
         - Vincent D: vincentd.md
+        - Sandy : sandy.md
+        - Laurent: laurent.md
         - Marie: Marie_Gombert.md
-        - Vincent: vincent.md
 theme:
     name: readthedocs
 extra_css:
