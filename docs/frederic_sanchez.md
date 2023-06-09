@@ -1,7 +1,7 @@
 
 # le volley-ball
 c'est un sport qui consiste à faire tomber le ballon au sol dans le camp adverse.
-![beach-volley](http://localhost:8000\images\volley.jpg)
+![beach-volley](images/volley.jpg)
 
 lien vers : [FFVB](http://www.ffvb.org/ )
 
