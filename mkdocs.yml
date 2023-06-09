@@ -6,6 +6,7 @@ nav:
     - Git ENSG: index.md
     - Pages perso:
         - Vincent: vincent.md
+        - Adja: afmboup.md
 theme:
     name: readthedocs
 extra_css:
