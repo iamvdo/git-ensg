@@ -7,6 +7,8 @@ nav:
     - Pages perso:
         - Vincent: vincent.md
         - JF: index-jf.md
+        - Fred : frederic_sanchez.md
+        - Adja: afmboup.md
 theme:
     name: readthedocs
 extra_css:
