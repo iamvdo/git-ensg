@@ -9,6 +9,7 @@ nav:
         - JF: index-jf.md
         - Fred : frederic_sanchez.md
         - Adja: afmboup.md
+        - Nicolas: nicolas.md    
 theme:
     name: readthedocs
 extra_css:
