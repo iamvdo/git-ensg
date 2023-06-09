@@ -44,6 +44,8 @@ git config --global user.name "votre_nom"
 ```
 
 Le flag `--global` ajoute ces options de manière globale, pour tous les projets Git de votre machine. Il peut être utile de configurer sans cette option pour un projet spécifique (cas d’ordinateurs partagés).
+Ainsi, la même commande commande appliquée au projet courant, sans l'option --global, permet une configuration spécifique.
+De plus, lorsque l'option Github de confidentialité de l'adresse de courriel est activée, il est possible d'utiliser un alias de courriel, voir notamment https://stackoverflow.com/a/51097104.
 
 Depuis l’ENSG, il est également nécessaire de configurer le proxy :
 
