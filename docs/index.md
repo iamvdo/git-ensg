@@ -1,4 +1,4 @@
-# Git ENSG
+# Git formationgi
 
 ![Logo Git](images/git-logo.svg)
 
@@ -35,6 +35,9 @@ Ensuite, il faut [configurer un *Personnal token classic*](https://docs.github.c
 Sur vos machines personnelles, il est préférable [d’utiliser des URLs et une clé SSH](https://docs.github.com/fr/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
 ## Configuration
+
+ce qu'il faut faire 
+
 
 Première chose à faire sur votre machine, c’est de configurer qui vous êtes :
 
