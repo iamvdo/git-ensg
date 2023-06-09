@@ -6,6 +6,7 @@ nav:
     - Git ENSG: index.md
     - Pages perso:
         - Vincent: vincent.md
+        - JF: index-jf.md
         - Fred : frederic_sanchez.md
         - Adja: afmboup.md
 theme:
