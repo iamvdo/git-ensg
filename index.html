@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://iamvdo.github.io/git-ensg/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Git ENSG</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="theme/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Git ENSG";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/git-ensg/";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Git ENSG
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Git ENSG</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creation-dun-compte-github">Création d’un compte GitHub</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#commencerrecuperer-un-projet-git">Commencer/Récupérer un projet Git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement-de-git">Fonctionnement de Git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-commandes">Les commandes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ajoutersupprimer-dans-lindex">Ajouter/Supprimer dans l’index</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creer-un-commit">Créer un commit</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fusionner-les-modifications">Fusionner les modifications</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mettre-a-jour-son-repo-local">Mettre à jour son repo local</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#branches">Branches</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conflits">Conflits</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#aller-plus-loin">Aller plus loin</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pages perso</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="vincent/">Vincent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="index-jf/">JF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="frederic_sanchez/">Fred</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="afmboup/">Adja</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="nicolas/">Nicolas</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Git ENSG</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Git ENSG</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/iamvdo/git-ensg/blob/main/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="git-ensg-test">Git ENSG test</h1>
+<p><img alt="Logo Git" src="images/git-logo.svg" /></p>
+<p><strong>Git est un VCS (Version Control System) ou logiciel de gestion de versions</strong> qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :</p>
+<ul>
+<li>de stocker des fichiers ailleurs que sur votre ordinateur ou une clé USB</li>
+<li>de travailler sur différents fichiers en même temps que d’autres personnes</li>
+<li>de garder un historique de toutes les modifications faites</li>
+<li>de partager des fichiers de manière publique ou privée</li>
+<li>et bien plus encore</li>
+</ul>
+<p><strong>Git est un logiciel libre et open-source, qui ne repose pas sur un serveur centralisé</strong>. Chaque personne d’un projet a donc sa propre copie du projet en local et peut être la référence pour les autres. Malgré tout, il est très fréquent d’utiliser un serveur intermédiaire comme Gitlab ou Github, qui sont des services d’hébergement de fichiers, et qui rendent le partage plus simple.</p>
+<p>Git est notamment utilisé pour le code informatique, mais ce sont avant tout des fichiers textes.</p>
+<h2 id="installation">Installation</h2>
+<p>Git est disponible facilement sur toutes les plateformes. <a href="https://git-scm.com/downloads">Télécharger Git</a></p>
+<p>Il peut être utilisé en ligne de commande depuis un terminal, ou via des outils graphiques comme les éditeurs de texte tel <a href="https://code.visualstudio.com/">Visual Studio Code</a>. Il existe également l’utilitaire <code>gitk</code>.</p>
+<p>Pour vérifier la bonne installation :</p>
+<pre><code class="language-bash">git --version
+</code></pre>
+<h3 id="creation-dun-compte-github">Création d’un compte GitHub</h3>
+<p>Si vous n’avez pas encore de compte, c’est par ici : <a href="https://github.com/signup">Création de compte GitHub</a></p>
+<p>Ensuite, il faut <a href="https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#cr%C3%A9ation-dun-personal-access-token-classic">configurer un <em>Personnal token classic</em></a>, une sorte de mot de passe sécurisé. C’est notamment utile pour exécuter des commandes Git qui utiliseront le protocole HTTPS. Conservez ce token dans un fichier texte temporairement (vous n’y aurez plus accès ensuite).</p>
+<p>Sur vos machines personnelles, il est préférable <a href="https://docs.github.com/fr/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls">d’utiliser des URLs et une clé SSH</a>.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Première chose à faire sur votre machine, c’est de configurer qui vous êtes :</p>
+<pre><code class="language-bash">git config --global user.email &quot;votre_adresse_mail_github&quot;
+git config --global user.name &quot;votre_nom&quot;
+</code></pre>
+<p>Le flag <code>--global</code> ajoute ces options de manière globale, pour tous les projets Git de votre machine. Il peut être utile de configurer sans cette option pour un projet spécifique (cas d’ordinateurs partagés).
+Ainsi, la même commande commande appliquée au projet courant, sans l'option --global, permet une configuration spécifique.
+De plus, lorsque l'option Github de confidentialité de l'adresse de courriel est activée, il est possible d'utiliser un alias de courriel, voir notamment https://stackoverflow.com/a/51097104.</p>
+<p>Depuis l’ENSG, il est également nécessaire de configurer le proxy :</p>
+<pre><code class="language-bash">git config --global http.proxy http://10.0.4.2:3128
+git config --global https.proxy http://10.0.4.2:3128
+</code></pre>
+<p>Pour un meilleur log, il peut aussi être intéressant d’ajouter un alias (utilisable plus tard avec <code>git lg --all</code>) :</p>
+<pre><code class="language-bash">git config --global alias.lg &quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit&quot;
+</code></pre>
+<p>Pour voir la config : <code>git config --list</code> et <code>git config --list --global</code></p>
+<h2 id="commencerrecuperer-un-projet-git">Commencer/Récupérer un projet Git</h2>
+<p>Pour initialiser un nouveau projet Git, la commande est <code>git init</code>. Cependant, il est souvent plus fréquent de récupérer un projet déjà existant, par exemple sur GitHub, pour cela :</p>
+<ul>
+<li>on «forke» un projet existant dans son espace GitHub</li>
+<li>on clone son fork sur son ordinateur avec <code>git clone &lt;url&gt;</code></li>
+<li>on vérifie le bon ajout du dépot distant avec <code>git remote -v</code></li>
+</ul>
+<p><img alt="Fork" src="images/fork.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">TP</p>
+<ul>
+<li>clonez le repo de ce site support : <a href="https://github.com/iamvdo/git-ensg">https://github.com/iamvdo/git-ensg</a> (avec l’URL en HTTPS)</li>
+<li>ouvrez l’intégralité du projet dans un éditeur de texte</li>
+<li>(remarquez le dossier caché <code>.git</code>)</li>
+</ul>
+<p>Ce site utilise mkdocs pour fonctionner, nous allons donc en avoir besoin en local :</p>
+<ul>
+<li>installez mkdocs avec <code>pip install mkdocs</code></li>
+<li>dans le dossier du projet, lancez la commande <code>mkdocs serve</code></li>
+<li>dans un navigateur, allez à l’URL <code>http://locahost:8000</code></li>
+</ul>
+</div>
+<h2 id="fonctionnement-de-git">Fonctionnement de Git</h2>
+<p>Voilà un diagramme qui explique le fonctionnement général de Git.</p>
+<p><img alt="Git Workflow" src="images/git-workflow.png" /></p>
+<p>En voici le principe :</p>
+<ul>
+<li><strong>Local Repo</strong> : repository local, c’est à dire le dossier local</li>
+<li><strong>Remote Repo</strong> : c’est le repository distant, par exemple sur GitHub</li>
+</ul>
+<p>Lorsque que l’on modifie/ajoute/supprime des fichiers en local, on modifie alors le <strong>working tree</strong>.</p>
+<p>Ensuite, pour enregistrer un ensemble de modifications, il nous faut choisir les fichiers (voir parties de fichiers) à ajouter ou non. Pour cela, nous utilisons les commandes <code>git add</code>/<code>git rm</code>. Cela ajoute/supprime les fichiers à l’<strong>index</strong> ou <strong>staging area</strong>. L’index est donc une sorte de zone d’attente qui permet de préparer l’enregistrement de ses modifications.</p>
+<p>Enfin, pour valider cet ensemble de modifications présent dans l’<strong>index</strong>, il nous faut alors faire <strong><code>git commit</code></strong>. Cela se réalise au sein d’une <strong>branche locale</strong> (<code>main</code> ou <code>master</code> par défaut). Après un commit, l’index en cours est vidé.</p>
+<p>Ces actions peuvent être répétées autant de fois que nécessaire, et cela sans se soucier de savoir où en est l’avancement du projet distant.</p>
+<p>Lorsque l’on souhaite envoyer ses modifications locales sur le repository distant, on utilise <code>git push</code>. Mais attention, si d’autres personnes ont déjà fait des modifications, il se peut que cela <a href="#conflits">génère des conflits</a>. Il est donc préférable de récupérer le code distant avant toutes nouvelles modifications à l’aide de <code>git fetch</code> ou <code>git pull</code>.</p>
+<p>Aussi, la plupart du temps, il n’est pas autorisé de mettre à jour directement la branche principale d’un projet. Il faut alors passer par des <em>pull requests</em>.</p>
+<h2 id="les-commandes">Les commandes</h2>
+<p>Quelques commandes utiles pour la prise d’informations :</p>
+<ul>
+<li><code>git status</code> affiche le statut, l’état des différentes zones (working tree, index, branche, conflits, etc.)</li>
+<li><code>git branch</code> liste les branches locales (l’étoile <code>*</code> affiche la branche de travail)</li>
+<li><code>git remote -v</code> affiche le nom et l’url des repository distants</li>
+<li><code>git lg --all</code> (commande personnalisée) affiche un arbre des commits et des branches</li>
+</ul>
+<h3 id="ajoutersupprimer-dans-lindex">Ajouter/Supprimer dans l’index</h3>
+<p>Voici quelques exemples de <code>git add</code> (identique pour <code>git rm</code>)</p>
+<pre><code class="language-bash"># Ajouter le fichier test.txt
+git add test.txt
+
+# Ajouter le dossier /images
+git add /images
+
+# Ajouter tout ce qui est modifié (. est le nom du dossier courant)
+git add .
+
+# Ajouter des portions de fichiers
+git add -p test.txt
+</code></pre>
+<h3 id="creer-un-commit">Créer un commit</h3>
+<p><strong>Pour enregistrer un état d’historique, on utilise <code>git commit</code></strong>. Chaque commit doit concerner un ajout particulier, une fonctionnalité particulière, que l’on précise par un message. Il est donc recommandé de réaliser de multiples petits commits, plutôt qu’un seul important.</p>
+<pre><code class="language-bash"># Ouvre un éditeur pour écrire le message du commit
+git commit
+
+# Creé un commit en précisant directement le message (préférable)
+git commit -m &quot;Message du commit&quot;
+</code></pre>
+<p>Rappel : les commits se font dans la branche courante.</p>
+<p>Il est maintenant possible de se déplacer dans l’historique avec <code>git checkout &lt;id_commit&gt;</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">TP</p>
+<ul>
+<li>dans le dossier <code>/docs</code>, créez un nouveau fichier <code>&lt;votre_prenom&gt;.md</code></li>
+<li>ajoutez un titre et une phrase d’introduction (accès à la <a href="https://www.markdownguide.org/cheat-sheet/">documentation Markdown</a>)</li>
+<li>visualisez le résultat à l’URL <code>http://localhost:8000/&lt;votre_prenom&gt;</code></li>
+<li>enregistrez vos modifications dans Git (<code>git add</code>, <code>git commit</code>)</li>
+<li>(testez de revenir à l’état précédent, puis à l’état actuel avec <code>git checkout</code>)</li>
+<li>poussez vos modifications sur votre repo distant (<code>git push &lt;nom_serveur&gt; &lt;nom_branche&gt;</code>)<ul>
+<li>utilisez votre nom d’utilisateur GitHub</li>
+<li>et votre token généré plus tôt</li>
+</ul>
+</li>
+<li>vérifiez sur GitHub que ça fonctionne</li>
+</ul>
+</div>
+<h2 id="fusionner-les-modifications">Fusionner les modifications</h2>
+<p>Dans le cas ou l’on travaille directement sur notre repo, le travail pourrait s’arrêter là. Mais souvent, en mode collaboratif, seules quelques personnes ont le droit de mettre à jour la branche principale. C’est le cas ici.</p>
+<p><strong>Pour demander l’intégration de nos modifications, nous allons donc passer par une <em>pull request</em></strong> (ou <em>merge request</em> sur d’autres plateformes). Cela se passe sur la plateforme GitHub. On parle alors de fusion ou de <em>merge</em>.</p>
+<p><a href="https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">Documentation Pull Request</a>.</p>
+<p><img alt="New Pull request" src="images/new-pull-request.png" /></p>
+<p><img alt="Compare changes" src="images/compare-changes.png" /></p>
+<p>Note : Une fusion crée un nouveau commit. Pour éviter cela, on peut alors passer par un <code>rebase</code>.</p>
+<h3 id="mettre-a-jour-son-repo-local">Mettre à jour son repo local</h3>
+<p>Pour récupérer des modifications distantes (faites par d’autres personnes), il faut utiliser <code>git pull</code> ou <code>git fetch</code> :</p>
+<ul>
+<li><code>git pull &lt;nom_repo&gt; &lt;nom_branche&gt;</code> récupère la branche distante et tente une fusion avec la branche locale.</li>
+<li><code>git fetch &lt;nom_repo&gt; &lt;nom_branche&gt;</code> ne fait que récupèrer la branche distante. Il faut donc ensuite choisir comment fusionner le code, par exemple avec <code>git merge</code> ou <code>git reset</code>.</li>
+</ul>
+<pre><code class="language-bash"># Récupère la branche main du repo origin et fusionne avec la branche en local
+git pull origin main
+
+# Identique à l’exemple précédent
+git fetch origin main
+git merge origin/main
+
+# Récupère la branche distante main, mais écrase la branche locale
+git fetch origin main
+git reset --hard origin/main
+</code></pre>
+<div class="admonition info">
+<p class="admonition-title">TP</p>
+<ul>
+<li>créez une <em>pull request</em> sur le repo officiel (sélectionnez les bons projets/bonnes branches)</li>
+<li>attendez que toutes les <em>pull requests</em> soit fusionnées</li>
+<li>récupérez les modifications de tous les participants avec <code>git pull</code></li>
+<li>visualisez l’arbre des commits avec <code>git lg --all</code></li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">TP</p>
+<ul>
+<li>Dans votre page personnelle, ajoutez au moins 2 parties, avec pour chaque partie au minimum :<ul>
+<li>un sous-titre</li>
+<li>un ou plusieurs paragraphes de texte</li>
+<li>une image</li>
+<li>idées de thématiques (un voyage, un loisir, etc.). Faites simple, on veut avant tout pouvoir utiliser Git</li>
+</ul>
+</li>
+<li>Pour chaque partie ajoutée, créez des commits associés (donc 2 au minimum)</li>
+<li>Pour l’instant, on garde nos modifications locales</li>
+</ul>
+</div>
+<h2 id="branches">Branches</h2>
+<p>Les branches Git permettent notamment de <strong>travailler sur plusieurs tâches en simultané</strong>. C’est aussi utile, tout simplement, parce que le projet distant peut évoluer durant notre propre travail local.</p>
+<p>Pour créer de nouvelles branches, on utilise <code>git branch &lt;nom_branche&gt;</code>. Pour se déplacer sur une branche, c’est <code>git checkout</code>.</p>
+<pre><code class="language-bash"># Cree une nouvelle branche
+git branch nom_branche
+
+# Se déplace sur une branche
+git checkout nom_branche
+
+# Crée une branche et se déplace en même temps
+git checkout -b nom_branche
+
+# Supprime une branche
+git branch -d nom_branche
+</code></pre>
+<p><img alt="Branches" src="images/branches.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">TP</p>
+<p>Notre problème actuel : nous avons modifié notre projet local, mais le repo distant a été modifié également. Nous n’avions pas de branche spécifique. Les 2 branches <code>main</code> ont donc divergées. Il nous faut résoudre ce «problème» en local. Pour cela :</p>
+<ul>
+<li>créez une branche là où vous êtes (<code>git branch &lt;nom_branche_pour_themes&gt;</code>)</li>
+<li>
+<p>récupérez la branche <code>main</code> distante et réinitialisez la branche <code>main</code> locale (<code>git fetch</code>, <code>git reset --hard</code>)</p>
+</li>
+<li>
+<p>ajoutez le lien vers votre page dans <code>mkdocs.yml</code></p>
+</li>
+</ul>
+<p>Ensuite, il nous faut «fusionner» la branche <code>main</code> et notre branche pour les thèmes. Deux options :</p>
+<ul>
+<li>Sur la branche <code>main</code> :<ul>
+<li><code>git merge &lt;nom_branche_pour_themes&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p>Mais mieux :</p>
+<ul>
+<li>
+<p>Sur la branche <code>&lt;nom_branche_pour_themes&gt;</code> (<code>git checkout &lt;nom_branche_pour_themes&gt;</code>) :</p>
+<ul>
+<li><code>git rebase main</code></li>
+</ul>
+</li>
+<li>
+<p>vérifiez votre travail avec <code>git lg --all</code></p>
+</li>
+<li>poussez vos modifications</li>
+<li>créez une <em>pull request</em></li>
+<li>attendez l’intégration dans le <code>main</code> distant et remettez à jour en local</li>
+<li>supprimez vos branches inutiles</li>
+</ul>
+</div>
+<h2 id="conflits">Conflits</h2>
+<p>Lorsqu’une fusion est tentée, mais que deux personnes ont modifié une ou plusieurs lignes d’un même fichier, Git crée un conflit. Cela est symbolisé dans le fichier par un formalisme particulier, qui indique les 2 états du fichier à la suite :</p>
+<pre><code class="language-bash"># début du conflit
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    # premier état du fichier
+=======
+    # second état
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; nom_branche
+# fin du conflit
+</code></pre>
+<p>Il faut donc faire un choix pour conserver seulement la partie 1 (<code>HEAD</code> est la position actuelle), la partie 2 (la nouvelle branche), ou les deux. Puis, supprimer le formalisme (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code> et <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>). Et enfin, continuez la fusion en cours (<code>merge</code>, <code>rebase</code> ou autre).</p>
+<h2 id="aller-plus-loin">Aller plus loin</h2>
+<p>Exemple d’intégration de Git dans Visual Studio Code</p>
+<p><img alt="Capture VS Code pour Git" src="images/vscode.png" /></p>
+<ul>
+<li><a href="https://learngitbranching.js.org/">Concepts Git sous forme de jeu</a></li>
+<li><a href="https://onlywei.github.io/explain-git-with-d3">Visualizing Git Concepts with D3</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="vincent/" class="btn btn-neutral float-right" title="Vincent">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/iamvdo/git-ensg/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="vincent/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.4.3
+Build Date UTC : 2023-06-09 15:31:26.034541+00:00
+-->
