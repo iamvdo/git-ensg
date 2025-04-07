@@ -1,0 +1,15 @@
+image: circleci/python:3.9-buster
+
+before_script:
+  - sudo pip install mkdocs
+
+pages:
+  script:
+  - sudo mkdocs build
+  artifacts:
+    paths:
+    - public
+  only:
+    - main
+  tags:
+    - gitlab-org-docker
