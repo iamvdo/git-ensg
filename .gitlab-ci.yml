@@ -8,7 +8,7 @@ pages:
   - sudo mkdocs build
   artifacts:
     paths:
-    - public
+    - site
   only:
     - main
   tags:
