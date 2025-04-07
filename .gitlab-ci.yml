@@ -9,6 +9,7 @@ pages:
   artifacts:
     paths:
     - site
+  publish: site
   only:
     - main
   tags:
