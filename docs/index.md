@@ -26,7 +26,7 @@ Pour vérifier la bonne installation :
 git --version
 ```
 
-### Création d’un compte GitHub
+### (Création d’un compte GitHub)
 
 Si vous n’avez pas encore de compte, c’est par ici : [Création de compte GitHub](https://github.com/signup)
 
@@ -36,16 +36,19 @@ Sur vos machines personnelles, il est préférable [d’utiliser des URLs et une
 
 ## Configuration
 
-Première chose à faire sur votre machine, c’est de configurer qui vous êtes :
+Première chose à faire sur votre machine perso, c’est de configurer qui vous êtes :
 
 ```bash
 git config --global user.email "votre_adresse_mail_github"
 git config --global user.name "votre_nom"
 ```
 
-Le flag `--global` ajoute ces options de manière globale, pour tous les projets Git de votre machine. Il peut être utile de configurer sans cette option pour un projet spécifique (cas d’ordinateurs partagés).
+Le flag `--global` ajoute ces options de manière globale, pour tous les projets Git de votre machine.
 
-Depuis l’ENSG, il est également nécessaire de configurer le proxy :
+**Depuis l’ENSG (cas d’ordinateurs partagés) :**
+
+- il est préférable de configurer sans l’option `--global`, mais au sein de chaque projet Git
+- il est également nécessaire de configurer le proxy
 
 ```bash
 git config --global http.proxy http://10.0.4.2:3128
@@ -62,17 +65,42 @@ Pour voir la config : `git config --list` et `git config --list --global`
 
 ## Commencer/Récupérer un projet Git
 
-Pour initialiser un nouveau projet Git, la commande est `git init`. Cependant, il est souvent plus fréquent de récupérer un projet déjà existant, par exemple sur GitHub, pour cela :
+Pour initialiser un nouveau projet Git, la commande est `git init`. Cependant, il est souvent plus fréquent de créer son projet sur une plateforme en ligne (GitHub, GitLab), puis de récupérer son projet en local (ce que l’on appelle cloner).
 
-- on «forke» un projet existant dans son espace GitHub
+!!! info "TP 1"
+
+    A faire une seule fois :
+
+    - créez un repo sur GitHub ou GitLab, avec un README
+    - éditez le README en ligne
+    - invitez les collaborateurs
+
+    A faire ensuite sur chaque machine :
+
+    - clonez le repo (`git clone <url-repo-distant>`)
+
+    Tout le monde a normalement récupéré le projet !
+
+Quand on souhaite cloner un projet qui ne nous appartient pas, il est préférable d’en créer une copie (ce que l’on appelle un *fork*)
+
+- on «forke» un projet existant dans son espace GitHub/GitLab
 - on clone son fork sur son ordinateur avec `git clone <url>`
 - on vérifie le bon ajout du dépot distant avec `git remote -v`
 
 ![Fork](images/fork.png)
 
-!!! info "TP"
+!!! info "TP 2"
 
-    - clonez le repo de ce site support : [https://github.com/iamvdo/git-ensg](https://github.com/iamvdo/git-ensg) (avec l’URL en HTTPS)
+    A faire une seule fois :
+
+    - faites un *fork* du projet commun :
+        - GitHub [https://github.com/iamvdo/git-ensg](https://github.com/iamvdo/git-ensg)
+        - GitLab [https://gitlab.com/iamvdo/git-ensg](https://gitlab.com/iamvdo/git-ensg)
+    - invitez les collaborateurs
+
+    Sur chaque machine :
+
+    - clonez ce repo
     - ouvrez l’intégralité du projet dans un éditeur de texte
     - (remarquez le dossier caché `.git`)
 
@@ -148,31 +176,14 @@ Rappel : les commits se font dans la branche courante.
 
 Il est maintenant possible de se déplacer dans l’historique avec `git checkout <id_commit>`.
 
-!!! info "TP"
+### Pousser les modifications
 
-    - dans le dossier `/docs`, créez un nouveau fichier `<votre_prenom>.md`
-    - ajoutez un titre et une phrase d’introduction (accès à la [documentation Markdown](https://www.markdownguide.org/cheat-sheet/))
-    - visualisez le résultat à l’URL `http://localhost:8000/<votre_prenom>`
-    - enregistrez vos modifications dans Git (`git add`, `git commit`)
-    - (testez de revenir à l’état précédent, puis à l’état actuel avec `git checkout`)
-    - poussez vos modifications sur votre repo distant (`git push <nom_serveur> <nom_branche>`)
-        - utilisez votre nom d’utilisateur GitHub
-        - et votre token généré plus tôt
-    - vérifiez sur GitHub que ça fonctionne
+Pour envoyer vos modifications, c’est `git pull` en précisant le nom du repository et de votre branche :
 
-## Fusionner les modifications
-
-Dans le cas ou l’on travaille directement sur notre repo, le travail pourrait s’arrêter là. Mais souvent, en mode collaboratif, seules quelques personnes ont le droit de mettre à jour la branche principale. C’est le cas ici.
-
-**Pour demander l’intégration de nos modifications, nous allons donc passer par une *pull request*** (ou *merge request* sur d’autres plateformes). Cela se passe sur la plateforme GitHub. On parle alors de fusion ou de *merge*.
-
-[Documentation Pull Request](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
-
-![New Pull request](images/new-pull-request.png)
-
-![Compare changes](images/compare-changes.png)
-
-Note : Une fusion crée un nouveau commit. Pour éviter cela, on peut alors passer par un `rebase`.
+```bash
+# poussez sur le repo origin, sur la branche main (à vérifier)
+git push origin main
+```
 
 ### Mettre à jour son repo local
 
@@ -194,25 +205,83 @@ git fetch origin main
 git reset --hard origin/main
 ```
 
-!!! info "TP"
+!!! info "TP 1"
 
-    - créez une *pull request* sur le repo officiel (sélectionnez les bons projets/bonnes branches)
+    A faire sur une seule machine, en local :
+
+    - modifiez le README en ajoutant une description du projet
+    - ajoutez le README à l’index (`git add README.md`)
+    - faites un commit en local (`git commit -m 'Ajout description'`)
+    - (testez de revenir à l’état précédent, puis à l’état actuel avec `git checkout <id-commit>`)
+    - poussez sur le serveur distant
+    - vérifiez la bonne mise à jour
+
+    Sur les machines qui n'ont pas encore les modifications :
+
+    - récupérez-les avec `git pull`
+    - visualisez l’arbre des commits avec `git lg --all`
+
+!!! info "TP 2"
+
+    A faire sur chaque machine, en local :
+
+    - dans le dossier `/docs`, créez un nouveau fichier `<nom_prenom>.md`
+    - ajoutez votre nom/prenom en titre et votre date de naissance en texte (accès à la [documentation Markdown](https://www.markdownguide.org/cheat-sheet/))
+    - visualisez le résultat à l’URL `http://localhost:8000/<nom_prenom>`
+    - enregistrez vos modifications dans Git (`git add`, `git commit`)
+    - ajoutez une image depuis internet
+    - enregistrez vos modifications dans Git (`git add`, `git commit`)
+    - poussez sur votre repo distant
+    - récupérez les modifications avec `git pull`
+
+
+## Fusionner les modifications
+
+Souvent, en mode collaboratif, ou quand le projet ne nous appartient pas, seules quelques personnes ont le droit de mettre à jour la branche principale.
+
+**Pour demander l’intégration de nos modifications, nous allons donc passer par une *pull request* (GitHub) ou *merge request* (GitLab)**. Cela se passe directement en ligne. On parle alors de fusion ou de *merge*.
+
+[Documentation Pull Request GitHub](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+
+![New Pull request](images/new-pull-request.png)
+
+![Compare changes](images/compare-changes.png)
+
+Note : Une fusion crée un nouveau commit. Pour éviter cela, on peut alors passer par un `rebase`.
+
+!!! info "TP 2"
+
+    - créez une *pull request* sur le repo officiel (sélectionnez les bons projets/branches)
     - attendez que toutes les *pull requests* soit fusionnées
     - récupérez les modifications de tous les participants avec `git pull`
     - visualisez l’arbre des commits avec `git lg --all`
 
-!!! info "TP"
-    - Dans votre page personnelle, ajoutez au moins 2 parties, avec pour chaque partie au minimum :
-        - un sous-titre
-        - un ou plusieurs paragraphes de texte
-        - une image
-        - idées de thématiques (un voyage, un loisir, etc.). Faites simple, on veut avant tout pouvoir utiliser Git
-    - Pour chaque partie ajoutée, créez des commits associés (donc 2 au minimum)
-    - Pour l’instant, on garde nos modifications locales
+!!! info "TP 2"
+
+    A faire sur chaque machine, en local :
+
+    - ajoutez un lien vers votre page dans `mkdocs.yml` (clé `nav`), à la suite du lien vers la page d’accueil
+    - poussez sur votre repo et récupérez les autres modifications
+
+## Conflits
+
+Lorsqu’une fusion est tentée, mais que deux personnes ont modifié une ou plusieurs lignes d’un même fichier, Git crée un conflit. Cela est symbolisé dans le fichier par un formalisme particulier, qui indique les 2 états du fichier à la suite :
+
+```bash
+# début du conflit
+<<<<<<< HEAD
+    # premier état du fichier
+=======
+    # second état
+>>>>>>> nom_branche
+# fin du conflit
+```
+
+Il faut donc faire un choix pour conserver seulement la partie 1 (`HEAD` est la position actuelle), la partie 2 (la nouvelle branche), ou les deux. Puis, supprimer le formalisme (`<<<<<<<`, `=======` et `>>>>>>>`). Et enfin, continuez la fusion en cours (`merge`, `rebase` ou autre).
 
 ## Branches
 
-Les branches Git permettent notamment de **travailler sur plusieurs tâches en simultané**. C’est aussi utile, tout simplement, parce que le projet distant peut évoluer durant notre propre travail local.
+Les branches Git permettent notamment de **travailler sur plusieurs tâches en simultané**. C’est aussi utile, tout simplement, parce que le projet distant peut évoluer durant notre propre travail local, ou pour simplifier la gestion des conflits.
 
 Pour créer de nouvelles branches, on utilise `git branch <nom_branche>`. Pour se déplacer sur une branche, c’est `git checkout` ou `git switch` (préférable).
 
@@ -231,48 +300,29 @@ git branch -d nom_branche
 ```
 
 ![Branches](images/branches.png)
+*Source atlassian.com*
 
-!!! info "TP"
+Lorsqu’une branche est créée, son point de départ est l’emplacement actuel du `HEAD` (commit, branche, etc.). Il est possible de déplacer l’intégralité d’une branche, c’est ce que l’on appelle un *rebase*. Cela revient à décrocher la branche de l’emplacement initial, pour la raccrocher à un autre emplacement.
 
-    Notre problème actuel : nous avons modifié notre projet local, mais le repo distant a été modifié également. Nous n’avions pas de branche spécifique. Les 2 branches `main` ont donc divergées. Il nous faut résoudre ce «problème» en local. Pour cela :
+![Rebase](images/rebase.png)
+*Source atlassian.com*
 
-    - créez une branche là où vous êtes (`git branch <nom_branche_pour_themes>`)
-    - récupérez la branche `main` distante et réinitialisez la branche `main` locale (`git fetch`, `git reset --hard`)
+!!! info "TP 2"
 
-    - ajoutez le lien vers votre page dans `mkdocs.yml`
+    
+    Notre problème actuel : nous avons modifié notre projet local (ajout des liens), mais le repo distant a été modifié également. Nous n’avions pas de branche spécifique. Les 2 branches `main` ont donc divergées. Il nous faudrait donc écraser la branche `main`, mais nous risquons de perdre notre travail. Pour résoudre ce «problème», en local :
 
-    Ensuite, il nous faut «fusionner» la branche `main` et notre branche pour les thèmes. Deux options :
+    - créez une branche là où vous êtes, mais en restant sur la branche `main` (`git branch <nom_branche>`)
+    - récupérez la branche `main` distante (`git fetch origin`) et réinitialisez la branche `main` locale par rapport à cette branche (`git reset --hard origin/main`)
+    - déplacez-vous sur votre branche (`git switch <nom_branche>`)
+    - rebasez sur la branche main (`git rebase main`)
 
-    - Sur la branche `main` :
-        - `git merge <nom_branche_pour_themes>`
-
-    Mais mieux :
-
-    - Sur la branche `<nom_branche_pour_themes>` (`git switch <nom_branche_pour_themes>`) :
-        - `git rebase main`
+    Ensuite, cela dépend de ce que vous souhaitez faire :
 
     - vérifiez votre travail avec `git lg --all`
     - poussez vos modifications
     - créez une *pull request*
-    - attendez l’intégration dans le `main` distant et remettez à jour en local
     - supprimez vos branches inutiles
-
-
-## Conflits
-
-Lorsqu’une fusion est tentée, mais que deux personnes ont modifié une ou plusieurs lignes d’un même fichier, Git crée un conflit. Cela est symbolisé dans le fichier par un formalisme particulier, qui indique les 2 états du fichier à la suite :
-
-```bash
-# début du conflit
-<<<<<<< HEAD
-    # premier état du fichier
-=======
-    # second état
->>>>>>> nom_branche
-# fin du conflit
-```
-
-Il faut donc faire un choix pour conserver seulement la partie 1 (`HEAD` est la position actuelle), la partie 2 (la nouvelle branche), ou les deux. Puis, supprimer le formalisme (`<<<<<<<`, `=======` et `>>>>>>>`). Et enfin, continuez la fusion en cours (`merge`, `rebase` ou autre).
 
 ## Aller plus loin
 
