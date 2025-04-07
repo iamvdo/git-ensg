@@ -214,17 +214,17 @@ git reset --hard origin/main
 
 Les branches Git permettent notamment de **travailler sur plusieurs tâches en simultané**. C’est aussi utile, tout simplement, parce que le projet distant peut évoluer durant notre propre travail local.
 
-Pour créer de nouvelles branches, on utilise `git branch <nom_branche>`. Pour se déplacer sur une branche, c’est `git checkout`.
+Pour créer de nouvelles branches, on utilise `git branch <nom_branche>`. Pour se déplacer sur une branche, c’est `git checkout` ou `git switch` (préférable).
 
 ```bash
 # Cree une nouvelle branche
 git branch nom_branche
 
 # Se déplace sur une branche
-git checkout nom_branche
+git switch nom_branche
 
 # Crée une branche et se déplace en même temps
-git checkout -b nom_branche
+git switch -c nom_branche
 
 # Supprime une branche
 git branch -d nom_branche
@@ -248,7 +248,7 @@ git branch -d nom_branche
 
     Mais mieux :
 
-    - Sur la branche `<nom_branche_pour_themes>` (`git checkout <nom_branche_pour_themes>`) :
+    - Sur la branche `<nom_branche_pour_themes>` (`git switch <nom_branche_pour_themes>`) :
         - `git rebase main`
 
     - vérifiez votre travail avec `git lg --all`
