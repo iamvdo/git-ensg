@@ -36,19 +36,16 @@ Sur vos machines personnelles, il est préférable [d’utiliser des URLs et une
 
 ## Configuration
 
-Première chose à faire sur votre machine perso, c’est de configurer qui vous êtes :
+Première chose à faire dans un projet Git, c’est de configurer qui vous êtes :
 
 ```bash
-git config --global user.email "votre_adresse_mail_github"
-git config --global user.name "votre_nom"
+git config user.email "votre_adresse_mail"
+git config user.name "votre_nom"
 ```
 
-Le flag `--global` ajoute ces options de manière globale, pour tous les projets Git de votre machine.
+Note: un flag `--global` permet de définir ce réglage de manière globale, pour tous les projets Git de votre machine. A ne pas utiliser dans le cas de machines partagées.
 
-**Depuis l’ENSG (cas d’ordinateurs partagés) :**
-
-- il est préférable de configurer sans l’option `--global`, mais au sein de chaque projet Git
-- il est également nécessaire de configurer le proxy
+Depuis l’ENSG, il est également nécessaire de configurer le proxy (déjà configuré en salle de cours) :
 
 ```bash
 git config --global http.proxy http://10.0.4.2:3128
