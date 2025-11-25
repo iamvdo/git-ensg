@@ -64,7 +64,7 @@ Pour voir la config : `git config --list` et `git config --list --global`
 
 Pour initialiser un nouveau projet Git, la commande est `git init`. Cependant, il est souvent plus fréquent de créer son projet sur une plateforme en ligne (GitHub, GitLab), puis de récupérer son projet en local (ce que l’on appelle cloner).
 
-!!! info "TP 1"
+!!! info "TP 1 - Commencement"
 
     A faire une seule fois :
 
@@ -86,7 +86,7 @@ Quand on souhaite cloner un projet qui ne nous appartient pas, il est préférab
 
 ![Fork](images/fork.png)
 
-!!! info "TP 2"
+!!! info "TP 2 - Commencement"
 
     A faire une seule fois :
 
@@ -202,7 +202,7 @@ git fetch origin main
 git reset --hard origin/main
 ```
 
-!!! info "TP 1"
+!!! info "TP 1 - Suite et fin"
 
     A faire sur une seule machine, en local :
 
@@ -218,7 +218,7 @@ git reset --hard origin/main
     - récupérez-les avec `git pull`
     - visualisez l’arbre des commits avec `git lg --all`
 
-!!! info "TP 2"
+!!! info "TP 2 - Suite"
 
     A faire sur chaque machine, en local :
 
@@ -246,14 +246,14 @@ Souvent, en mode collaboratif, ou quand le projet ne nous appartient pas, seules
 
 Note : Une fusion crée un nouveau commit. Pour éviter cela, on peut alors passer par un `rebase`.
 
-!!! info "TP 2"
+!!! info "TP 2 - Suite"
 
     - créez une *pull request* sur le repo officiel (sélectionnez les bons projets/branches)
     - attendez que toutes les *pull requests* soit fusionnées
     - récupérez les modifications de tous les participants avec `git pull`
     - visualisez l’arbre des commits avec `git lg --all`
 
-!!! info "TP 2"
+!!! info "TP 2 - Suite"
 
     A faire sur chaque machine, en local :
 
@@ -304,7 +304,7 @@ Lorsqu’une branche est créée, son point de départ est l’emplacement actue
 ![Rebase](images/rebase.png)
 *Source atlassian.com*
 
-!!! info "TP 2"
+!!! info "TP 2 - Suite et fin"
 
     
     Notre problème actuel : nous avons modifié notre projet local (ajout des liens), mais le repo distant a été modifié également. Nous n’avions pas de branche spécifique. Les 2 branches `main` ont donc divergées. Il nous faudrait donc écraser la branche `main`, mais nous risquons de perdre notre travail. Pour résoudre ce «problème», en local :
