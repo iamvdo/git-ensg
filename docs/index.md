@@ -175,7 +175,7 @@ Il est maintenant possible de se déplacer dans l’historique avec `git checkou
 
 ### Pousser les modifications
 
-Pour envoyer vos modifications, c’est `git pull` en précisant le nom du repository et de votre branche :
+Pour envoyer vos modifications, c’est `git push` en précisant le nom du repository et de votre branche :
 
 ```bash
 # poussez sur le repo origin, sur la branche main (à vérifier)
