@@ -4,10 +4,11 @@ repo_url: https://github.com/iamvdo/git-ensg/
 edit_uri: 'blob/main/docs/'
 nav:
     - Git ENSG: index.md
+    - Aurore : ag.md
     - Kev: sundareswaran_kevin.md
     - Arnaud DESQUEYROUX: Page_Arnaud.md
     - Gaelle: massard_gaelle.md
-     - François Virevialle: Virevialle_Francois.md
+    - François Virevialle: Virevialle_Francois.md
 theme:
     name: readthedocs
 extra_css:
