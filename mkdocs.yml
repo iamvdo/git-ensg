@@ -4,6 +4,7 @@ repo_url: https://github.com/iamvdo/git-ensg/
 edit_uri: 'blob/main/docs/'
 nav:
     - Git ENSG: index.md
+    - Arnaud DESQUEYROUX: Page_Arnaud.md
 theme:
     name: readthedocs
 extra_css:
