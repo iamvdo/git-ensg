@@ -10,3 +10,4 @@ extra_css:
     - theme/extra.css
 markdown_extensions:
     - admonition
+    
