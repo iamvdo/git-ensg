@@ -1,6 +1,6 @@
-# Git ENSG FV
+# Git ENSG
 
-![Logo Git](images/git-logo.svg) ![logo ours](images/logo_ours.webp)
+![Logo Git](images/git-logo.svg)
 
 **Git est un VCS (Version Control System) ou logiciel de gestion de versions** qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :
 
