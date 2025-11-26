@@ -6,6 +6,7 @@ nav:
     - Git ENSG: index.md
     - Arnaud DESQUEYROUX: Page_Arnaud.md
     - Gaelle: massard_gaelle.md
+     - François Virevialle: Virevialle_Francois.md
 theme:
     name: readthedocs
 extra_css:
