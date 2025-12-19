@@ -7,4 +7,4 @@
 3. fun
 
 ![roller](images/trotro.png)
-*trotro est fan de de roller*
+*trotro est fan de roller*
