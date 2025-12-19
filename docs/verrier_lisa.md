@@ -8,3 +8,9 @@
 
 ![roller](images/trotro.png)
 *trotro est fan de de roller*
+
+Ma To-Do List d'aujourd'hui:
+- [X] Etudier
+- [ ] Etendre mon linge
+- [ ] Faire ma valise
+- [ ] Ranger ma chambre
