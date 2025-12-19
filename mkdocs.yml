@@ -4,6 +4,7 @@ repo_url: https://github.com/iamvdo/git-ensg/
 edit_uri: 'blob/main/docs/'
 nav:
     - Git ENSG: index.md
+    - Safira: said_safira.md
     - Lizza: verrier_lisa.md
     - Vincent: vincent-deoliveira.md
     - Victor: nom_prenom.md
