@@ -1,4 +1,4 @@
-# Git ENSG
+# Git ENSG 
 
 ![Logo Git](images/git-logo.svg)
 
@@ -105,7 +105,7 @@ Quand on souhaite cloner un projet qui ne nous appartient pas, il est préférab
 
     - installez mkdocs avec `pip install mkdocs`
     - dans le dossier du projet, lancez la commande `mkdocs serve`
-    - dans un navigateur, allez à l’URL `http://locahost:8000`
+    - dans un navigateur, allez à l’URL `http://localhost:8000`
 
 ## Fonctionnement de Git
 
