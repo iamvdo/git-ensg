@@ -5,6 +5,8 @@ edit_uri: 'blob/main/docs/'
 nav:
     - Git ENSG: index.md
     - Lizza: verrier_lisa.md
+    - Vincent: vincent-deoliveira.md
+    - Raphael: RAPHAEL.md
 theme:
     name: readthedocs
 extra_css:
