@@ -5,6 +5,7 @@ edit_uri: 'blob/main/docs/'
 nav:
     - Git ENSG: index.md
     - Vincent: vincent-deoliveira.md
+    - Daouda: daouda_timera.md
 theme:
     name: readthedocs
 extra_css:
