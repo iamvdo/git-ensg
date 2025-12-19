@@ -1,4 +1,4 @@
-# Git ENSG
+# Git ENSG Yasmine
 
 ![Logo Git](images/git-logo.svg)
 
