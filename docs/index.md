@@ -1,5 +1,5 @@
 # Git ENSG
-
+AAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa
 ![Logo Git](images/git-logo.svg)
 
 **Git est un VCS (Version Control System) ou logiciel de gestion de versions** qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :
@@ -16,6 +16,14 @@ Git est notamment utilisé pour le code informatique, mais ce sont avant tout de
 
 ## Installation
 
+Poopoopoo !
+pourquoi toi t'a le droit c'est pas juste!!!
+D'où t'aurais pas le droit de faire ça ?
+Blablabla, j'aime bien t'embêter.
+tu fais que censurer alors oui j'ai l'impression de pas avoir le droit
+j'accepte les chat mais pas ça
+c'était n'importe quoi 
+
 Git est disponible facilement sur toutes les plateformes. [Télécharger Git](https://git-scm.com/downloads)
 
 Il peut être utilisé en ligne de commande depuis un terminal, ou via des outils graphiques comme les éditeurs de texte tel [Visual Studio Code](https://code.visualstudio.com/). Il existe également l’utilitaire `gitk`.
@@ -30,13 +38,13 @@ git --version
 
 Si vous n’avez pas encore de compte, c’est par ici : [Création de compte GitHub](https://github.com/signup)
 
-Ensuite, il faut [configurer un *Personnal token classic*](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#cr%C3%A9ation-dun-personal-access-token-classic), une sorte de mot de passe sécurisé. C’est notamment utile pour exécuter des commandes Git qui utiliseront le protocole HTTPS. Conservez ce token dans un fichier texte temporairement (vous n’y aurez plus accès ensuite).
+Ensuite, il faut [configurer un *Personnal token classic*](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#cr%C3%A9ation-dun-personal-access-token-classic), une sorte de mot de passe sécurisé. C’est notamment utile pour exécuter des commandes Git qui utiliseront le protocole HTTPS. Conservez ce token dans un fichier texte temporairement (vous n’y aurez plus accès ensuite). (finalement obligatoire)
 
 Sur vos machines personnelles, il est préférable [d’utiliser des URLs et une clé SSH](https://docs.github.com/fr/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
 ## Configuration
 
-Première chose à faire dans un projet Git, c’est de configurer qui vous êtes :
+Première chose à faire dans un projet Git, c’est de configurer qui vous êtes (faire TP1 d'abords):
 
 ```bash
 git config user.email "votre_adresse_mail"
@@ -45,7 +53,7 @@ git config user.name "votre_nom"
 
 Note: un flag `--global` permet de définir ce réglage de manière globale, pour tous les projets Git de votre machine. A ne pas utiliser dans le cas de machines partagées.
 
-Depuis l’ENSG, il est également nécessaire de configurer le proxy (déjà configuré en salle de cours) :
+Depuis l’ENSG, il est également nécessaire de configurer le proxy (déjà configuré en salle de cours) ( t'es pas gentil méchante cheffe de projet)(refus d'optempere):
 
 ```bash
 git config --global http.proxy http://10.0.4.2:3128
@@ -126,7 +134,7 @@ Enfin, pour valider cet ensemble de modifications présent dans l’**index**, i
 
 Ces actions peuvent être répétées autant de fois que nécessaire, et cela sans se soucier de savoir où en est l’avancement du projet distant.
 
-Lorsque l’on souhaite envoyer ses modifications locales sur le repository distant, on utilise `git push`. Mais attention, si d’autres personnes ont déjà fait des modifications, il se peut que cela [génère des conflits](#conflits). Il est donc préférable de récupérer le code distant avant toutes nouvelles modifications à l’aide de `git fetch` ou `git pull`.
+Lorsque l’on souhaite envoyer ses modifications locales sur le repository distant, on utilise `git push`. Mais attention, si d’autres personnes ont déjà fait des modifications, il se peut que cela [génère des conflits](#conflits)(mais ... on aime les conflits). Il est donc préférable de récupérer le code distant avant toutes nouvelles modifications à l’aide de `git fetch` ou `git pull`.
 
 Aussi, la plupart du temps, il n’est pas autorisé de mettre à jour directement la branche principale d’un projet. Il faut alors passer par des *pull requests*.
 
