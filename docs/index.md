@@ -9,11 +9,14 @@
 - de garder un historique de toutes les modifications faites
 - de partager des fichiers de manière publique ou privée
 - et bien plus encore
+ciao
 
 **Git est un logiciel libre et open-source, qui ne repose pas sur un serveur centralisé**. Chaque personne d’un projet a donc sa propre copie du projet en local et peut être la référence pour les autres. Malgré tout, il est très fréquent d’utiliser un serveur intermédiaire comme Gitlab ou Github, qui sont des services d’hébergement de fichiers, et qui rendent le partage plus simple.
 
 Git est notamment utilisé pour le code informatique, mais ce sont avant tout des fichiers textes.
 
+Bonjour !
+Heyy!!
 ## Installation
 
 Git est disponible facilement sur toutes les plateformes. [Télécharger Git](https://git-scm.com/downloads)
