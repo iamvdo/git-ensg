@@ -1,9 +1,16 @@
 # Git ENSG
+# BlaBla
+####### Damien
+Salut c'est le groupe de nico damien et tanguy
+
+
+![alt text](nico.png)
+
 
 ![Logo Git](images/git-logo.svg)
 
 **Git est un VCS (Version Control System) ou logiciel de gestion de versions** qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :
-
+-coucou les ptits lou
 - de stocker des fichiers ailleurs que sur votre ordinateur ou une clé USB
 - de travailler sur différents fichiers en même temps que d’autres personnes
 - de garder un historique de toutes les modifications faites
@@ -266,11 +273,8 @@ Lorsqu’une fusion est tentée, mais que deux personnes ont modifié une ou plu
 
 ```bash
 # début du conflit
-<<<<<<< HEAD
     # premier état du fichier
-=======
     # second état
->>>>>>> nom_branche
 # fin du conflit
 ```
 
