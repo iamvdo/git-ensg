@@ -3,6 +3,8 @@ site_url: https://iamvdo.github.io/git-ensg/
 repo_url: https://github.com/iamvdo/git-ensg/
 edit_uri: 'blob/main/docs/'
 nav:
+    - Git Yanis: https://github.com/Ailemdslegame
+    - Git Matteo: https://github.com/matteocdb
     - Git ENSG: index.md
 theme:
     name: readthedocs
